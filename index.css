@@ -629,4 +629,16 @@ footer {
     footer {
         margin-top: 0;
     }
+
+}
+
+@media screen and (max-width: 500px) {
+    .sec-two .col-md-4 h1 {
+        font-size: 38px;
+    }
+
+    .sec-two .col-md-4 p {
+        font-size: 10px;
+    }
+    
 }
