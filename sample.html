@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>How to Zoom an Image on Mouse Hover using CSS?</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+      .geeks {
+        position: relative;
+        width: 30%;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+
+      .geeks img {
+        width: 100%;
+        transition: 0.5s all ease;
+      }
+
+      .tagnam {
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        position: absolute;
+      }
+
+      .geeks:hover .image {
+        transform: scale(1.2);
+      }
+
+      .tagnam h1 {
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .tagnam p {
+        font-size: 13px;
+
+      }
+      .tagnam img {
+        width: 50px;
+        
+      }
+      .adj {
+        text-align: center;
+        
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="geeks">
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20200403151026/adblur_gfg.png"
+        alt="Geeks Image" class="image"/>
+      <div class="tagnam">
+        <div class="adj">
+        <img src="dumb.png" alt="">
+    </div>
+        <h1>WORKOUT</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+          obcaecati possimus quae adipisci saepe autem! Suscipit consequuntur
+          fugit nihil molestias magni rem exercitationem iusto. Debitis,
+          voluptate. Quod nesciunt doloribus asperiores.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
